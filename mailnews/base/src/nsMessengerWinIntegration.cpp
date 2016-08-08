@@ -209,7 +209,7 @@ static LRESULT CALLBACK MessageWindowProc( HWND msgWindow, UINT msg, WPARAM wp, 
     }
   }
 
-  return TRUE;
+  return DefWindowProc(msgWindow, msg, wp, lp);
 }
 
 static HWND msgWindow;
